@@ -13,3 +13,7 @@ policy "enforce-mandatory-tags" {
 module "tfplan-functions" {
     source = "./common-functions/tfplan-functions/tfplan-functions.sentinel"
 }
+    
+policy "less-than-100-month" {
+  enforcement_level = "soft-mandatory"
+}
